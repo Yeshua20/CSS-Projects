@@ -308,19 +308,13 @@ transform: scale(1.1);
     padding: .125rem 0;
     white-space: nowrap;
    }
-
-   .tabs p{
-    margin:.75rem 1.25rem;
-   }
-
-
 }
 
 @media only screen and (max-width:400px) {
 
 h1{
     white-space: nowrap;
-    color:yellow;
 }
+
     
 }
