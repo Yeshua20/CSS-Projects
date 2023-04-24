@@ -1,0 +1,309 @@
+body{
+    background-color: rgb(233, 223, 255);
+    font-family: "open sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin:0;
+    color:rgb(44, 44, 44);
+}
+
+
+h1{
+    align-self: center;
+    color: rgb(83, 49, 156 );
+    text-transform: capitalize;
+}
+
+.container{
+    background-color: #fff;
+    max-width: 56.25rem;
+    border-radius: 1.25rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding:1rem;
+    position: relative;
+}
+
+.tabs{
+   display: flex;
+   width:100%;
+  justify-content:space-around;
+  color:rgb(200,175,255);
+   margin: 0 0 2rem 0;
+   padding: 1rem;
+   position: relative;
+}
+
+.tabs p{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    padding:.5rem;
+
+} 
+
+.tabs p:hover{
+    color:rgb(83, 49, 156 );
+}
+
+.tabs p.active{
+    color:rgb(83, 49, 156 );
+    position: relative;
+}
+
+.line{
+    height:.1875rem;
+    width:100%;
+    background-color: rgb(231, 231, 231);
+    position: absolute;
+    top:6.3125rem;   
+    left:0;
+}
+
+.tabs p.active::before{
+    content: "";
+    background-color:purple ;
+    width:200%;
+    height:.25rem;
+    position: absolute;
+    left:-50%;
+    top: 3.25rem;
+    z-index: 2;
+}
+
+
+
+.img-wrapper{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.img-wrapper img{
+    
+    height: 2.5rem;
+    
+}
+
+.toggle {
+display: flex;
+background-color: rgb(83, 49, 156 );
+align-items: center;
+border-radius: 20px;
+width:8.75rem;
+height:2rem;
+justify-content: space-between;
+padding: 0 0.5rem;
+font-weight: bold;
+
+}
+
+
+.toggle span:first-of-type{
+    color:#fff;
+    padding:0 .625rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.toggle span:last-of-type{
+    padding: 0 .375rem;
+    color:rgb(83, 49, 156 );
+    border-radius: 20px;
+    background-color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.session-card{
+    background-color: rgb(250,247,255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin:1.875rem;
+    width:50%;
+    border-radius: 20px;
+    padding:2rem;
+    font-weight: bold;
+    
+}
+
+.session-card p{
+    font-size: 1rem;
+    color:rgb(44, 44, 44);
+}
+
+.session-card span{
+    color:rgb(83, 49, 156 );
+    font-size: 3.5rem;
+} 
+
+p.session-text {
+    text-transform: capitalize;
+    line-height: 2rem;
+    padding-left:1.25rem;
+}
+
+.slider{
+    width:100%;
+    position: relative;
+}
+
+.slider .bar{
+    width:100%;
+    height: 1rem;
+    background-color: rgb(248, 248, 248);
+    border:1px solid rgb(210,210,210);
+    border-radius: 14px;
+}
+
+.bar .progress{
+    width:43%;
+    height: 18px;
+    background:linear-gradient(
+        90deg,
+       rgba(2,0,36,1) 0%,
+       rgba(53,10,74,1) 36%,
+       rgba(83,49,156,1) 100%
+    );  
+    position: absolute;
+    left:0;
+    top:0;
+    border-top-left-radius:14px;
+    border-bottom-left-radius: 14px;
+}
+
+.bar .point{
+    position: absolute;
+    width:2.5rem;
+    height:2.1875rem;
+    background-color: rgb(83, 49, 156 );
+    border-radius: 50%;
+    left:40%;
+    top:-0.5rem;
+    z-index: 2;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.14s transform ease;
+}
+
+.bar .point:hover{
+    transform: scale(1.2);
+}
+
+.slider .scale ul{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    padding: 0;
+    color:rgb(166,166,166);
+}
+
+
+.card-wrapper{
+    display: flex;
+    
+}
+
+.card{
+    text-align: center;
+    background-color: rgb(250,247,255);
+    border-radius: 20px;
+    margin: 2rem;
+    padding:1rem 2rem;
+    box-shadow: 0px 3px 11px 1px rgba(0,0,0,0.1);
+    font-weight: bold;
+    color:rgb(83, 49, 156 );
+    text-transform: uppercase;
+     transition: 0.14s transform ease;
+   position: relative;
+}
+
+.card .card-header p{
+    margin:.25rem 0;
+     
+}
+.card .price{
+    font-size: 2.625rem;
+    color:rgb(44, 44, 44);
+   
+}
+
+.card hr{
+    margin-top:1rem ;
+    width:40%;
+    border-radius: 2px;
+    border: 1px solid rgb(210,210,210);
+}
+
+
+.card button{
+    border: none;
+    color:#fff;
+    background-color: rgb(83, 49, 156 );
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    transition: 0.14s transform ease;
+}
+
+.card button:hover{
+transform: scale(1.1);
+}
+
+.card:hover{
+  transform: scale(1.05);  
+}
+
+.card .discount{
+ background:linear-gradient(
+        90deg,
+       rgba(2,0,36,1) 0%,
+       rgba(53,10,74,1) 36%,
+       rgba(83,49,156,1) 100%
+    );
+   color: #fff;
+    width:100%;
+    position: absolute;
+    left:0;
+    top:0;
+   
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+@media only screen and (max-width:769px){
+   .card{
+    width:85%;
+
+    padding: 2rem 0.5rem;
+
+   }
+
+   .card-wrapper{
+    flex-wrap: wrap-reverse;
+   }
+   body{
+    padding:1.4rem;
+   }
+
+   .session-card{
+         width:80%;
+         padding:2rem 1rem;
+   }
+
+   h1{
+    margin:40px;
+   }
+}
