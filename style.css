@@ -315,5 +315,7 @@ h1{
     white-space: nowrap;
    
 }
-
+ .slider{
+    width:75%;
+ }
 }
