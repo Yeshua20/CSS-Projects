@@ -305,7 +305,10 @@ transform: scale(1.1);
    }
 
    h1{
-    margin:1.625rem;
     padding: .125rem 0;
+   }
+
+   .tabs p{
+    margin:.75rem 1.25rem;
    }
 }
